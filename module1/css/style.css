@@ -1127,8 +1127,8 @@ ul {
 
   .information__button {
     padding: 18px 36px;
-    transition: opacity .4s ease-in-out;
-    text-align: center;
+    width: 100%;
+    transition: opacity .4s ease-in-out;    
   }
 
   .bank {
