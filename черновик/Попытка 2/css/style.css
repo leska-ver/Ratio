@@ -1,0 +1,163 @@
+/*Общие стили*/
+:root {
+  --color-white: #fff;
+  --color-portGore: #212353;
+  --color-riverBed: #4B5D68;
+  --color-polar: #f7fafd;
+  --color-mediumPurple: #9C69E2;
+  --color-wispPink: #fde8f5;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  /*Общий шрифт 600*/
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  /*перенос слов*/
+  word-wrap: break-word;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.title-h2 {
+  font-family: 'Helvetica';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-portGore);
+}
+
+.descr-p {
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--color-riverBed);
+}
+/* --// Общие стили*/
+
+/* slide_around */
+.testimonials__container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 90px;
+  border-radius: 50px;
+  max-width: 1117px;
+  background-color: #9C69E2;
+}
+
+.testimonials__title-h2 {
+  padding: 109px 0 55px;
+  color: #fff;
+}
+
+.testimonials__item {
+  display: flex;
+  margin-right: 25px;
+  padding: 60px 60px 31px 70px;
+  border: 1px solid var(--color-mediumPurple);
+  border-radius: 20px;
+  width: 645px;
+  background-color: #fff;
+}
+
+.testimonials__block-img {
+  margin-right: 30px;
+  width: 267px;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+
+}
+
+.testimonials__title-h4 {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #212353;
+}
+
+.testimonials__margin-span {
+  margin-bottom: 19px;
+}
+
+.testimonials__span {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9C69E2;
+}
+
+.testimonials__descr {
+  width: 97.5%;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/*-- Swiper биб.--*/
+.testimonials__slide .swiper-slide.swiper-slide-active:first-child img {
+  box-shadow: none;
+}
+
+.testimonials__slide .swiper-slide:not(:nth-child(1)) {
+  /* flex: 0 1 auto; */
+  padding-top: 54px;
+  padding-left: 39px;
+  width: 29%!important;
+}
+
+
+
+
+
+
+
+
+
+
+

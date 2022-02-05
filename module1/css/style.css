@@ -247,12 +247,12 @@ ul {
 .information__img { 
   position: absolute;
   top: 107px;
-  right: -57px;
-  width: 834px;
+  right: 0;
+  width: 65%;
   height: 100%;
   background-image: url("../img/information.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom right;
 }
 

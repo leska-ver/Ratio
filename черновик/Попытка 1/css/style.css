@@ -1,0 +1,144 @@
+/*Общие стили*/
+:root {
+  --color-white: #fff;
+  --color-portGore: #212353;
+  --color-riverBed: #4B5D68;
+  --color-polar: #f7fafd;
+  --color-mediumPurple: #9C69E2;
+  --color-wispPink: #fde8f5;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Avenir';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-portGore);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p, a {
+  word-wrap: break-word;
+}
+
+.title-h2 {
+  font-family: 'Helvetica';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-portGore);
+}
+
+.descr-p {
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--color-riverBed);
+}
+/* --// Общие стили*/
+
+/* slide_around */
+.testimonials__container{
+position:relative;
+margin:0 auto;
+padding-left: 90px;
+border-radius: 50px;
+max-width: 1220px;
+background-color: #9C69E2;
+}
+
+.testimonials__title-h2 {
+padding: 109px 0 88px;
+color: #fff;
+}
+
+.testimonials__item {
+display: flex;
+padding: 60px 70px 50px 70px;
+border-radius: 20px;
+width: 645px;
+background-color: #fff;
+}
+
+.testimonials__block-img {
+margin-right: 30px;
+}
+
+.testimonials__img {
+border-radius: 50%;
+}
+
+.testimonials__title-h4 {
+font-size: 18px;
+line-height: 28px;
+color: #212353;
+}
+
+.testimonials__margin-span {
+margin-bottom: 19px;  
+}
+
+.testimonials__span {
+font-size: 14px;
+line-height: 22px;
+color: #9C69E2;
+}
+
+.testimonials__descr {
+width: 74.5%;
+font-size: 18px;
+line-height: 32px;
+}
+
+/*slide-js*/
+.roundabout-moveable-item {
+left: 0;
+top: 0;
+width: 665px;
+height: auto;
+
+overflow:hidden;
+}
+.roundabout-in-focus {
+cursor: pointer;
+}
+
+.around_next,
+.around_prev{
+width:50px;
+height:50px;
+position:absolute;
+cursor:pointer;
+background:orange;
+z-index:300;
+top:50%;
+-webkit-transform:translate(0, -50%);
+-ms-transform: translate(0, -50%);
+transform: translate(0, -50%);
+}
+
+.around_next{
+right:0;
+}
+
+.around_prev{
+left:0;
+}
+
+/* end slide_around */
