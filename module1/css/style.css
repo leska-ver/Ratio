@@ -1111,10 +1111,6 @@ ul {
     margin-right: 5%;
   }  
 
-  .information {
-    background: linear-gradient( 180deg, #f7fbfe 10%, #f9fcfe 22%, #fafcfe 45%, #fff);
-  }
-
   .information__title {
     margin-bottom: 30px;
   }
