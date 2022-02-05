@@ -1099,6 +1099,10 @@ ul {
     padding-bottom: 20px;
   }
 
+  .header {
+    background: linear-gradient(180deg, #f6fafd 14%, #f7fbfe 38%);
+  }
+
   .header__logo {
     margin-right: auto;
   }
@@ -1106,6 +1110,10 @@ ul {
   .header__item:not(:last-child) {
     margin-right: 5%;
   }  
+
+  .information {
+    background: linear-gradient( 180deg, #f7fbfe 10%, #f9fcfe 22%, #fafcfe 45%, #fff);
+  }
 
   .information__title {
     margin-bottom: 30px;
