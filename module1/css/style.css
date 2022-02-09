@@ -46,7 +46,7 @@ html {
 
 body {
   min-width: 320px;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -105,42 +105,31 @@ ul {
   margin-right: auto;
   padding-right: 50px;
   padding-left: 50px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.title-h1 {
-  font-family: 'Ubuntu';
-  font-weight: 700;
+.h2 {
   font-size: 80px;
   line-height: 88px;
-  color: var(--color-portGore);
 } 
 
-.title-h2 {
-  font-family: 'Ubuntu';
-  font-weight: 700;
+.h3 {
   font-size: 40px;
   line-height: 52px;
-  color: var(--color-portGore);
 }
 
-.title-h3 {
-  font-family: 'Ubuntu';
-  font-weight: 700;
+.h4 {
   font-size: 24px;
   line-height: 31px;
-  color: var(--color-portGore);
 }
 
-.title-h4 {
-  font-family: 'Ubuntu';
+.h5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-  color: var(--color-portGore);
 }
 
-.descr-p {
-  font-family: 'Ubuntu';
+.p {
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
@@ -150,14 +139,13 @@ ul {
 /***Шапка***/
 .header {
   background: linear-gradient(180deg, #f6fafd 20%, #f7fbfe 75%);
-  padding-top: 44px;
+  padding-top: 42px;
   padding-bottom: 69px;
 }
 
 .header__container {
   display: flex;
-  align-items: self-end;
-  
+  align-items: self-end;  
 }
 
 .header__logo {
@@ -203,7 +191,6 @@ ul {
 }
 
 .header__link--active {
-  font-weight: 700;
   color: var(--color-portGore);
 }
 
@@ -221,7 +208,7 @@ ul {
 
 .header__link:active {
   border: 1px solid var(--color-portGore);
-  box-shadow: 0px 5px 5px -5px var(--color-mediumPurple);
+  box-shadow: 0 5px 5px -5px var(--color-mediumPurple);
   opacity: 6;
 }
 /*** // Шапка-1220px***/
@@ -229,9 +216,8 @@ ul {
 /***information-1220px***/
 .information {
   position: relative;
-  background: linear-gradient(
-180deg, #f7fbfe 10%, #f9fcfe 22%, #fafcfe 45%, #fff);
-  padding-top: 67px;
+  background: linear-gradient(180deg, #f7fbfe 10%, #f9fcfe 22%, #fafcfe 45%, #fff);
+  padding-top: 63px;
   padding-bottom: 63px;
 } 
 
@@ -256,17 +242,13 @@ ul {
   background-position: bottom right;
 }
 
-/*.information__img_none1220 {
-  display: none;
-} */
-
 .information__title {
   margin-top: 0;
   margin-bottom: 58px;
   width: 567px;
 }
 
-.information__desrc {
+.information__description {
   margin-bottom: 72px;
   width: 35%;
   font-weight: 500;
@@ -298,13 +280,13 @@ ul {
 
 /***bank-1220px***/
 .bank {
-  padding-top: 150px;
+  padding-top: 152px;
   padding-bottom: 59px;
 }
 
 .bank__fon {
   display: flex;
-  padding: 89px 69px 47px;
+  padding: 83px 40px 57px 69px;
   border: 1px solid var(--color-wispPink);
   border-radius: 50px;
   background-color: var(--color-wispPink);
@@ -334,7 +316,7 @@ ul {
   margin-bottom: 37px;
 }
 
-.bank__desrc {
+.bank__description {
   font-weight: 500;
   font-size: 18px;
   line-height: 29px;
@@ -353,9 +335,9 @@ ul {
   flex-direction: column;  
 }
 
-.features__desrc {
-  margin-bottom: 83px;
-  width: 52%;
+.features__description {
+  margin-bottom: 80px;
+  width: 53%;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -402,7 +384,7 @@ ul {
   display: flex;
   flex-direction: column;
   margin-left: 43%;
-  padding: 30px 68px 21px 30px;
+  padding: 25px 68px 21px 30px;
   width: 60%;
   height: 100%;
 }
@@ -412,12 +394,16 @@ ul {
 }
 
 .features__title-h3 {
-  margin-bottom: 16px;
+  margin-bottom: 42px;
   width: max-content;
   line-height: 34px;
 }
 
-.features__desrc-book {
+.features__title-h4 {
+  margin-bottom: 13px;
+}
+
+.features__desc-book {
   margin-bottom: 0;
   font-family: 'Ubuntu';
   font-weight: 400;
@@ -426,14 +412,13 @@ ul {
 }
 
 .features__bottom {
-  padding-bottom: 31px;
+  padding-bottom: 34px;
 }
 
 .features__link {  
   margin-left: 49%;
   border: 1px solid transparent;
   width: max-content;
-  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 16px;
   line-height: 25px;
@@ -471,19 +456,18 @@ ul {
 .slider__wrap {
   overflow: hidden;
   position: relative; 
-  padding-top: 109px;
+  padding-top: 70px;
   padding-left: 91px;
   padding-bottom: 58px;
   border-radius: 50px;
   background-color: #9C69E2;
-  /*Для затухания текста .slider__descr. z-index стоит ещё в .slider__item*/
+  /*Для затухания текста .slider__description. z-index стоит ещё в .slider__item*/
   z-index: 0;
 }
 
-.slider__title-h2 {
-  margin: 0;
-  margin-bottom: 87px;
-  color: #fff;
+.slider__title-h3 {
+  margin-bottom: 0 0 87px;
+  color: var(--color-white);
 }
 
 .slider__listGrid {
@@ -495,7 +479,7 @@ ul {
   position: relative;
   overflow: hidden;
   margin-right: 25px;
-  padding: 60px 69px 19px 70px;
+  padding: 60px 70px 19px;
   box-shadow: 0px 25px 5px -5px rgb(3,3,3, 7%);/*Тень*/
   border: 1px solid var(--color-mediumPurple);
   border-radius: 20px;
@@ -552,7 +536,7 @@ ul {
   color: #9C69E2;
 }
 
-.slider__descr {
+.slider__description {
   margin-bottom: 0;
   font-size: 18px;
   line-height: 32px;
@@ -699,7 +683,7 @@ ul {
   padding-top: 18px;
 }
 
-.footer__link, .footer__desrc {
+.footer__link, .footer__description {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -720,7 +704,7 @@ ul {
   color: var(--color-brilliantRose);
 }
 
-.footer__desrc {
+.footer__description {
   margin-bottom: 35px;
 }
 
@@ -742,17 +726,17 @@ ul {
 
 .footer__title-social {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   font-size: 16px;
   line-height: 25px;
 }
 
-.footer__nav-icone {
+.footer__nav-icon {
   margin: 0 auto;
   width: 175px;
 }
 
-.footer__list-icone {
+.footer__list-icon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -760,12 +744,12 @@ ul {
   margin: 0 auto;
 }
 
-.footer__item-icone {
+.footer__item-icon {
   width: 30px;
   height: 30px;
 }
 
-.footer_link-icone {
+.footer__link-icon {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -773,26 +757,26 @@ ul {
   background-size: cover;
 }
 
-.footer__link-icone:focus-visible {
+.footer__link-icon:focus-visible {
   outline: none;
 }
 
-.footer_link-icone ellipse {
+.footer__link-icon ellipse {
   transition: fill .4s ease-in-out;
 }
 
-.footer__link-icone:focus ellipse {
+.footer__link-icon:focus ellipse {
   outline: none;
   fill: var(--color-portGore);
   opacity: 1;
 }
 
-.footer__link-icone:hover ellipse {
+.footer__link-icon:hover ellipse {
   fill: var(--color-mediumPurple);
   opacity: 1;
 }
 
-.footer__link-icone:active ellipse {
+.footer__link-icon:active ellipse {
   fill: var(--color-riverBed);
   opacity: 1;
 }
@@ -832,7 +816,7 @@ ul {
     width: 100%;
   }
 
-  .information__desrc {
+  .information__description {
     margin-bottom: 50px;
     width: 50%;
   }
@@ -869,7 +853,7 @@ ul {
     margin: 0;
   }
 
-  .features__desrc {
+  .features__description {
     margin-bottom: 20px;
   }
   
@@ -892,7 +876,7 @@ ul {
     padding-bottom: 50px;
   }
 
-  .slider__title-h2 {
+  .slider__title-h3 {
     margin-bottom: 40px;
   }
 
@@ -923,7 +907,7 @@ ul {
     margin-top: 15px;
   }
 
-  .footer__desrc {
+  .footer__description {
     margin-bottom: 10px;
   }
 
@@ -961,12 +945,12 @@ ul {
     line-height: 68px;
   }
 
-  .information__desrc {
+  .information__description {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .title-h2 {
+  .h2 {
     margin-bottom: 20px;
     font-size: 25px;
     line-height: 32px;
@@ -995,7 +979,7 @@ ul {
     margin: 0 auto;
   }
 
-  .bank__desrc {
+  .bank__description {
     font-size: 16px;
     line-height: 25px;
   }  
@@ -1012,18 +996,18 @@ ul {
     background-position: 50% 72%;
   }
 
-  .features__desrc {
+  .features__description {
     margin: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .title-h3 {
+  .h3 {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .features__desrc-book {
+  .features__desc-book {
     margin: 0;
     line-height: 20px;
   }
@@ -1069,7 +1053,7 @@ ul {
     justify-content: center;
   }
 
-  .slider__descr {
+  .slider__description {
     line-height: 25px;
     margin-top: 0;
   }
@@ -1121,7 +1105,7 @@ ul {
     background-size: contain;
   } 
 
-  .information__desrc {
+  .information__description {
     margin-top: 0;
     margin-bottom: 30px;
     width: 100%;
@@ -1152,7 +1136,7 @@ ul {
     margin-top: 0;
   }
 
-  .bank__desrc {
+  .bank__description {
     margin-bottom: 0;
   }
 
@@ -1200,12 +1184,12 @@ ul {
     align-items: center;
   }
 
-  .footer__nav-icone {
+  .footer__nav-icon {
     margin-left: -7px;
     width: 200px;
   }
 
-  .footer__list-icone {
+  .footer__list-icon {
     grid-gap: 40px;
   }
 }

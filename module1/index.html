@@ -20,8 +20,8 @@
 </head>
 
 <body>
-  <!-- Для семантики если нет заголовка h1 в вёрстке. Ставим скрытый заголовок.
-  <h1 class="visually-hidden">Я для семантики</h1> валидатор не пропустил, h1 должен быть один на странице а у меня их два-->
+  <!-- текст для h1 можно взять из мета тэга  title и тогда не будет два h1->-->
+  <h1 class="visually-hidden"></h1><!--DataWarehouse – банк хранения данных высокого уровня.</h1> валидатор не пропустил, h1 должен быть один на странице а у меня их два-->
   <header class="header">
     <div class="container header__container">
       <a href="#" class="header__logo">
@@ -50,11 +50,11 @@
   <main>
     <section class="information">
       <div class="container information__container">
-        <h1 class="information__title title-h1">
+        <h2 class="information__title h2">
           Save your data storage here.
-        </h1>
+        </h2>
         <div class="information__img information__img_none1220"></div>
-        <p class="information__desrc desrc-p">
+        <p class="information__description p">
           Data Warehouse is a data storage area that has been tested for security, so you can store your data here
           safely but not be afraid of being stolen by others.
         </p>
@@ -68,9 +68,9 @@
             <div class="bank__img bank__img_none808"></div>
           </div>
           <div class="bank__text">
-            <h2 class="bank__title title-h2">We are a high-level data storage bank</h2>
+            <h3 class="bank__title h3">We are a high-level data storage bank</h3>
             <div class="bank__img bank__img_none1220"></div>
-            <p class="bank__desrc descr-p">
+            <p class="bank__description p">
               The place to store various data that you can access at any time through the internet and where you can
               carry it. This very flexible storage area has a high level of security. To enter into your own data you
               must enter the password that you created when
@@ -82,15 +82,15 @@
     </section>
     <section class="features" id="features">
       <div class="container features__container">
-        <h2 class="features__title title-h2">Features</h2>
-        <p class="features__desrc descr-p">Some of the features and advantages that we provide for those of you who
+        <h3 class="features__title-h3 h3">Features</h3>
+        <p class="features__description p">Some of the features and advantages that we provide for those of you who
           store data in this Data Warehouse.</p>
         <ul class="features__list">
           <li class="features__item features__item-img-1">
             <div class="features__width">
               <!--Блок для выравнивание текста-->
-              <h3 class="features__title-h3 title-h3">Search Data</h3>
-              <p class="features__desrc-book descr-p">
+              <h4 class="features__title-h4 h4">Search Data</h4>
+              <p class="features__desc-book p">
                 Don't worry if your data is very large, the Data Warehoue provides a search engine, which is useful for
                 making it easier to find data effectively saving time.
               </p>
@@ -112,8 +112,8 @@
           <li class="features__item features__item-img-2">
             <div class="features__width">
               <!--Блок для выравнивание текста-->
-              <h3 class="features__title-h3 title-h3">24 Hours Access</h3>
-              <p class="features__desrc-book descr-p">
+              <h4 class="features__title-h4 h4">24 Hours Access</h4>
+              <p class="features__desc-book p">
                 Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when
                 you need data when urgent.
               </p>
@@ -135,8 +135,8 @@
           <li class="features__item features__item-img-3">
             <div class="features__width">
               <!--Блок для выравнивание текста-->
-              <h3 class="features__title-h3 title-h3">Print Out</h3>
-              <p class="features__desrc-book descr-p">
+              <h4 class="features__title-h4 h4">Print Out</h4>
+              <p class="features__desc-book p">
                 Print out service gives you convenience if someday you need print data, just edit it all and just print
                 it.
               </p>
@@ -158,8 +158,8 @@
           <li class="features__item features__item-img-4">
             <div class="features__width">
               <!--Блок для выравнивание текста-->
-              <h3 class="features__title-h3 title-h3">Security Code</h3>
-              <p class="features__desrc-book descr-p">
+              <h4 class="features__title-h4 h4">Security Code</h4>
+              <p class="features__desc-book p">
                 Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured
                 with a code or password that you created, so only you can open the file.
               </p>
@@ -184,42 +184,42 @@
     <section class="slider">
       <div class="container slider__container">
         <div class="slider__wrap">
-          <h2 class="slider__title-h2 title-h2">Testimonials</h2>
+          <h3 class="slider__title-h3 h3">Testimonials</h3>
           <div class="slider__swip">
-            <div class="slider__block-list">
+            <div class="slider__block">
               <ul class="slider__listGrid slider__list">
                 <li class="slider__item slider__item_subGrid">
                   <img class="slider__avatar-img" src="./img/avatar-1.png" alt="Avatar">
-                  <h4 class="slider__title-h4">John Fang</h4>
+                  <h5 class="slider__title-h5">John Fang</h5>
                   <div class="slider__margin-span">
                     <span class="slider__span">wordfaang.com</span>
                   </div>
                   <div class="slider__box-shadow">
-                    <p class="slider__descr descr-p">
+                    <p class="slider__description p">
                       Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
                     </p>
                   </div>
                 </li>
                 <li class="slider__item slider__item_subGrid">
                   <img class="slider__avatar-img" src="./img/avatar-2.png" alt="Avatar">
-                  <h4 class="slider__title-h4">Jeny Doe</h4>
+                  <h5 class="slider__title-h5">Jeny Doe</h5>
                   <div class="slider__margin-span">
                     <span class="slider__span">UX Engineer</span>
                   </div>
                   <div class="slider__box-shadow">
-                    <p class="slider__descr descr-p">
+                    <p class="slider__description p">
                       Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor
                     </p>
                   </div>
                 </li>
                 <li class="slider__item slider__item_subGrid">
                   <img class="slider__avatar-img" src="./img/avatar-3.png" alt="Avatar">
-                  <h4 class="slider__title-h4">William</h4>
+                  <h5 class="slider__title-h5">William</h5>
                   <div class="slider__margin-span">
                     <span class="slider__span">Web Designer</span>
                   </div>
                   <div class="slider__box-shadow">
-                    <p class="slider__descr descr-p">
+                    <p class="slider__description p">
                       Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor
                     </p>
                   </div>
@@ -233,8 +233,8 @@
                   <span>.</span>
                 </div>
                 <div class="slider__block-arrow">
-                  <span class="slider__arrow"></span>
-                  <span class="slider__arrow"></span>
+                  <span class="slider__arrow" aria-label="Назад"></span>
+                  <span class="slider__arrow" aria-label="Вперёд"></span>
                 </div>
               </div>
             </div>
@@ -249,26 +249,26 @@
         <a class="footer__logo" href="#">
           <img class="footer__logo-img" src="./img/logo__text.svg" alt="logo">
         </a>
-        <h4 class="footer__title title-h4">
-          Warehouse Society, 234
-          <br>
+        <h5 class="footer__title h5">
+          Warehouse Society, 234 
+          <br><!--Без br здесь не решишь шириною, цифры скачут на другую строку-->
           Bahagia Ave Street PRBW 29281
-        </h4>
+        </h5>
         <a class="footer__link" href="mailto:info@warehouse.project">info@warehouse.project</a>
-        <p class="footer__desrc desrc-p">1-232-3434 (Main)</p>
+        <p class="footer__description p">1-232-3434 (Main)</p>
         <span class="footer__span">
           &copy;&nbsp;Datawarehouse&trade;, 2020. All rights reserved.
           Company Registration Number: 21479524.
         </span>
       </div>
       <div class="footer__right">
-        <h4 class="footer__title-social">
+        <h5 class="footer__title-social">
           Social Media
-        </h4>
-        <nav class="footer__nav-icone">
-          <ul class="footer__list-icone">
-            <li class="footer__item-icone">
-              <a class="footer__link-icone" href="https://www.facebook.com/" target="_blank">
+        </h5>
+        <nav class="footer__nav-icon"><!-- На верху стоит footer__link он не относится к иконкам, и я что ради него должна только здесь оставить footer__link-icon? Это уже генератор дерево меня не пропустит. -->
+          <ul class="footer__list-icon">
+            <li class="footer__item-icon">
+              <a class="footer__link-icon" href="https://www.facebook.com/" target="_blank">
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse opacity="0.1" cx="25" cy="25.102" rx="25" ry="24.538" fill="#212353" />
                   <path
@@ -277,8 +277,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__item-icone">
-              <a class="footer__link-icone" href="https://twitter.com/" target="_blank">
+            <li class="footer__item-icon">
+              <a class="footer__link-icon" href="https://twitter.com/" target="_blank">
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse opacity="0.1" cx="25" cy="25.102" rx="25" ry="24.538" fill="#212353" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -287,8 +287,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__item-icone">
-              <a class="footer__link-icone" href="https://www.instagram.com/" target="_blank">
+            <li class="footer__item-icon">
+              <a class="footer__link-icon" href="https://www.instagram.com/" target="_blank">
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse opacity="0.1" cx="25" cy="25.102" rx="25" ry="24.538" fill="#212353" />
                   <path
