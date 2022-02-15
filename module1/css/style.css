@@ -38,8 +38,8 @@ html {
   box-sizing: border-box;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -111,7 +111,7 @@ ul {
 .h2 {
   font-size: 80px;
   line-height: 88px;
-} 
+}
 
 .h3 {
   font-size: 40px;
@@ -134,7 +134,7 @@ ul {
   font-size: 24px;
   line-height: 31px;
   color: var(--color-riverBed);
-} 
+}
 
 /***Шапка***/
 .header {
@@ -145,12 +145,13 @@ ul {
 
 .header__container {
   display: flex;
-  align-items: self-end;  
+  align-items: self-end;
 }
 
 .header__logo {
   margin-right: 111px;
   outline: none;
+  /* TODO: в этом нет необходимости */
   border: 1px solid transparent;
   transition: opacity .4s ease-in-out;
 }
@@ -178,9 +179,9 @@ ul {
 
 .header__item:not(:last-child) {
   margin-right: 35px;
-} 
+}
 
-.header__link {    
+.header__link {
   padding: 0 4px;
   border: 1px solid transparent;
   font-weight: 500;
@@ -197,9 +198,10 @@ ul {
 .header__link:focus {
   outline: none;
   border-bottom: 1px solid var(--color-portGore);
+  /* TODO: в нулевых значениях не указываем 'px' */
   box-shadow: 0px 5px 5px -5px var(--color-mediumPurple);
   color: var(--color-portGore);
-  
+
 }
 
 .header__link:hover {
@@ -219,7 +221,7 @@ ul {
   background: linear-gradient(180deg, #f7fbfe 10%, #f9fcfe 22%, #fafcfe 45%, #fff);
   padding-top: 63px;
   padding-bottom: 63px;
-} 
+}
 
 .information__container {
   position: relative;
@@ -230,7 +232,7 @@ ul {
   width: 1250px;
 }
 
-.information__img { 
+.information__img {
   position: absolute;
   top: 107px;
   right: 0;
@@ -296,7 +298,7 @@ ul {
   margin-right: 75px;
 }
 
-.bank__img {  
+.bank__img {
   width: 403px;
   height: 420px;
   background-image: url("../img/bank-img.png");
@@ -332,7 +334,7 @@ ul {
 .features__container {
   display: flex;
   align-items: center;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .features__description {
@@ -352,7 +354,7 @@ ul {
 }
 
 .features__item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   border-radius: 50px;
   background-repeat: no-repeat;
@@ -415,7 +417,7 @@ ul {
   padding-bottom: 34px;
 }
 
-.features__link {  
+.features__link {
   margin-left: 49%;
   border: 1px solid transparent;
   width: max-content;
@@ -425,25 +427,25 @@ ul {
   transition: color .4s ease-in-out, outline .4s ease-in-out;
 }
 
-.features__link:focus {  
+.features__link:focus {
   outline: none;
   border-bottom: 1px solid var(--color-portGore);
   box-shadow: 0 5px 5px 5px -5px var(--color-mediumPurple);
 }
 
-.features__link:hover {  
+.features__link:hover {
   outline: 2px solid var(--color-mediumPurple);
   outline-offset: 8px;
 }
 
-.features__link:active {  
+.features__link:active {
   outline: none;
   border: none;
-  color: var(--color-mediumPurple);  
+  color: var(--color-mediumPurple);
 }
 
 .features__span {
-  padding-left: 17px;  
+  padding-left: 17px;
 }
 /*** // features-1220px***/
 
@@ -455,7 +457,7 @@ ul {
 
 .slider__wrap {
   overflow: hidden;
-  position: relative; 
+  position: relative;
   padding-top: 111px;
   padding-left: 91px;
   padding-bottom: 58px;
@@ -573,10 +575,11 @@ ul {
 }
 
 /*Стрелки*/
-.slider__block-arrow {	
+.slider__block-arrow {
+  /* TODO: внимательнее к табуляции */
 	position: relative;
   display: flex;
-	width: max-content;	
+	width: max-content;
 }
 
 .slider__arrow {
@@ -589,7 +592,7 @@ ul {
 	background-color: var(--color-white);
   transition: background-color .4s ease-in-out;
   cursor: pointer;
-} 
+}
 
 .slider__arrow::before {
 	content: '';
@@ -597,7 +600,7 @@ ul {
   top: 14px;
 	right: -7px;
 	width: 40px;
-	height: 2px;	
+	height: 2px;
 	background-color: var(--color-white);
 	transform: rotate(-45deg);
 }
@@ -608,7 +611,7 @@ ul {
   top: -12px;
 	right: -7px;
 	width: 40px;
-	height: 2px;	
+	height: 2px;
 	background-color: var(--color-white);
 	transform: rotate(45deg);
 }
@@ -856,7 +859,7 @@ ul {
   .features__description {
     margin-bottom: 20px;
   }
-  
+
   .features__list {
     grid-gap: 20px 6px;
   }
@@ -871,6 +874,7 @@ ul {
   }
 
   .slider__wrap {
+    /* TODO: лучше использовать сокращённую запись 'padding: 50px 0 50px 50px' */
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 50px;
@@ -886,7 +890,7 @@ ul {
 
   .slider__listGrid {
     grid-template-columns: 60.3% 420px 420px;
-  }  
+  }
 
   .slider__item {
     margin-right: 13px;
@@ -924,7 +928,7 @@ ul {
   }
 
   .container {
-    max-width: 100%;    
+    max-width: 100%;
   }
 
   .header__container, .information__container, .bank__container, .features__container {
@@ -938,7 +942,7 @@ ul {
     width: 100%;
     height: 320px;
     background-size: cover;
-  } 
+  }
 
   .information__title {
     font-size: 50px;
@@ -957,7 +961,7 @@ ul {
   }
   .bank {
       padding-bottom: 10px;
-  } 
+  }
 
   .bank__margin {
     margin-right: 0;
@@ -969,7 +973,7 @@ ul {
 
   .bank__img_none808 {
     display: none;
-  }  
+  }
 
   .bank__img_none1220 {
     display: block;
@@ -982,8 +986,8 @@ ul {
   .bank__description {
     font-size: 16px;
     line-height: 25px;
-  }  
-  
+  }
+
   .features__list {
     grid-template-rows: repeat(4, 300px);
   }
@@ -1029,7 +1033,7 @@ ul {
       "slider__text-grid_two"
       "slider__text-grid_three";
     grid-template-columns: 1fr;
-    grid-template-rows: 97px 21px 21px 1fr; 
+    grid-template-rows: 97px 21px 21px 1fr;
     gap: 10px;
   }
 
@@ -1038,6 +1042,7 @@ ul {
   }
 
   .slider__avatar-img {
+    /* TODO: лучше использовать сокращённую запись 'margin: 0 auto 10px' */
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -1089,10 +1094,10 @@ ul {
   .header__logo {
     margin-right: auto;
   }
-  
+
   .header__item:not(:last-child) {
     margin-right: 5%;
-  }  
+  }
 
   .information__title {
     margin-bottom: 30px;
@@ -1103,7 +1108,7 @@ ul {
     width: 320px;
     height: 170px;
     background-size: contain;
-  } 
+  }
 
   .information__description {
     margin-top: 0;
@@ -1117,7 +1122,7 @@ ul {
     display: block;
     text-align: center;
     width: 100%;
-    transition: opacity .4s ease-in-out;    
+    transition: opacity .4s ease-in-out;
   }
 
   .bank {
@@ -1206,6 +1211,6 @@ ul {
 
   .bank__img_none1220 {
     width: 220px;
-    height: 226px;  
-  }  
-}  
+    height: 226px;
+  }
+}
